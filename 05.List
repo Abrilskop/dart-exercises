@@ -1,0 +1,20 @@
+void main(){
+  List names = ["Carlos","Lucia","Lolito"];
+  print (names);
+  
+  // la posicion siempre comienza desde 0
+  print(names[0]);
+  
+  // agregar valores a la lista con el metodo add
+  names.add("Saori");
+  print (names);
+  
+  // Eliminar 1 valor de la lista por posicion
+  names.removeAt(2);
+  print (names);
+  
+  // Eliminar 1 valor de la lista declarando el elemento
+  names.remove("Carlos");
+  print(names);
+  // TODO: Completar lo que falta
+}
