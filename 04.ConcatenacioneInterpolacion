@@ -1,0 +1,16 @@
+void main() {
+  // Concatenacion: enlazar o unir 2 cosas
+  String  str1 = "Hola";
+  String  str2 = "Papus";
+  int edad = 30;
+  
+  // imprimir con salto de linea
+  print(str1);
+  print(str2);
+  
+  // imprimir sin salto
+  print(str1 +" "+ str2);
+  
+  // Interpolacion: concatenar valores intermedios. Tambien se peude usar diferentes tipos de variables
+  print("$str1 $str2 $edad");
+}
