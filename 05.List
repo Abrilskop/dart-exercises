@@ -16,5 +16,15 @@ void main(){
   // Eliminar 1 valor de la lista declarando el elemento
   names.remove("Carlos");
   print(names);
-  // TODO: Completar lo que falta
+  
+  // Creacion de una lista que no cambie los valores que tiene se agrega const
+  const List apellidos = ["Ramos", "Cacerez", "Tupayachi"];
+  print(apellidos);
+  // si intentamos agregar o eliminar los elementos de la lista nos arrojara un error.
+  //apellidos.add("Chique");
+  // print(apellidos);
+  
+  // saber la cantidad de elemntos de la lista.
+  print("El tamaño de la lista es: ${apellidos.length}");
+  
 }
