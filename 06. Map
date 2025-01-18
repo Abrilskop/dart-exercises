@@ -1,0 +1,34 @@
+void main(){
+  // Map : objeto que almacena datos en forma de llave. - Diccionario
+  Map usuario ={
+    "nombre": "Jose",
+    "apellido": "Lopez",
+    "pais": "Perú"
+  };
+  
+  print(usuario["nombre"]);
+  print(usuario["apellido"]);
+  print(usuario["pais"]);
+  
+  // para usar tipos de pares de valores para usuarios, lo ideal siempre es indicar que tipo de datos contendra.
+    Map <String, dynamic> users ={
+    "nombre": "Jose",
+    "apellido": "Lopez",
+    "pais": "Perú"
+  };
+  
+  print(users["nombre"]);
+  print(users["apellido"]);
+  print(users["pais"]);
+  
+  print("El mapa tiene ${usuario.length} elementos");
+  
+  // agregaremos un par de llame valor
+  usuario.addAll({"ciudad": "cusco"});
+  print(usuario);
+  
+  print(usuario.containsValue("Lopez"));
+    
+ usuario.clear();
+  print(usuario);
+}
