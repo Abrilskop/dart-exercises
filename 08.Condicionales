@@ -1,0 +1,18 @@
+void main(){
+  
+  int n1=20;
+  int n2= 40;
+
+  int resultado = n1+n2;
+    
+  print("El resultado es: $resultado");
+  
+  if (resultado<40){
+    print("Es menor a 40");
+  }else if (resultado == 45){
+    print("Entro en la condicion");
+  }
+  else{
+    print("No se cumpli la condicion");
+  }
+}
