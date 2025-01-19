@@ -1,0 +1,8 @@
+void main(){
+  // ciclo : estructura de codigo q tienen los lenguajes de programcion.
+  // si cumple con la condicion
+  for(int i=0; i<5;i++){
+    print(i);
+  }
+  
+}
