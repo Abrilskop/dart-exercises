@@ -1,0 +1,30 @@
+void main(){
+  // funcion: bloque de codigo q ejecuta una tarea especifica.
+  
+  String mifuncion(){
+    return "yei tengo sueño";
+  }
+  print(mifuncion());
+  
+  int suma(int n1, int n2){
+    return n1+n2;
+  }
+  print(suma(5,4));
+  
+  // funciones anidada: que solo se llamar  dentro del met main.
+  // alcance de mi funcion
+  String returnStringNested(){
+    return 'holo ooooo';
+  }
+   returnStringNested();
+  // parametros: al apartado de la funcion donde se declaran las variables
+  // argumentos : son los valores agregadors a los parametros.
+}
+
+void otherfunction(){
+  returnString();
+}
+
+void positionalParamas(int x, double y, String greeting){
+  positionalParamas(5,3.5,'h1');
+}
