@@ -1,0 +1,16 @@
+void main(){
+// while: cumplimiento de una  accion mientras se cumple una condicion.
+  int numero = 0;
+  while(numero <5){
+    print(numero);
+    
+    // cada vez q se realice esa accion se sumara 1
+    numero++;
+    
+  // DO WHILE. se ejecuta al menos una vez.
+    do{
+      print(numero);
+      numero++;
+    }while(numero <=7);
+  }
+}
