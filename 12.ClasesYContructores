@@ -1,0 +1,24 @@
+void main(){
+  // clase: es una base con caracteristicas determinadas, donde todo lo creado sirve para la interaccion de la api.
+  // objeto: es parte de una clase, cada objeto tiene caracteristicas y metodos definidos, que determinan las acciones que haran dentro del codigo
+  // para la creacion del objeto desde el main se creara un nuevo objeto llamado mycar
+  
+  // objeto
+  Car myCar = Car();
+  print(myCar.numberDoor);
+  
+  // 2 objeto
+  Car myBlueCar = Car();
+  print(myBlueCar.numberDoor);
+  
+  // asignamos un nuevo valor para el objeto myCar
+  myCar.numberDoor = 4;
+  print(myBlueCar.numberDoor);
+  
+  // Contructores: 
+}
+
+class Car{
+  // features - caracteristicas
+  int numberDoor= 5;
+}
