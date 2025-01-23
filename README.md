@@ -1,4 +1,4 @@
-# Curso de Programación en Dart
+# Dart Exercises
 
 Este repositorio contiene una serie de ejercicios y ejemplos prácticos desarrollados en Dart. El objetivo de este proyecto es demostrar la comprensión y aplicación de los conceptos fundamentales del lenguaje Dart, como variables, tipos de datos, funciones, control de flujo, herencia, y más.
 
