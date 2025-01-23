@@ -1,0 +1,36 @@
+// feature: Es un medio para obtener un valor  en algun momento en el futuro.
+// Se desarrollan de manera asincrona
+// Si cargamos una imagen, esta tarea llevara mas tiempo.
+
+void main(){
+  // llmar al metodo
+  orderActivity();
+}
+
+// metodo 
+void orderActivity(){
+  act1();
+  act2();
+  act3();
+  
+  String act2Info = await act2();
+  act3(act2Info);
+}
+
+void act1(){
+  String a = "Activity 1 information";
+  print("Activity 1 done");
+}
+// tarea asincrona : cuando no sucede al mismo tiempo q otra esta termina despues
+void act2(){
+  Duration twoSeconds = Duration(seconds:2);
+  Future.delayed(twoSeconds,(){
+      String a = "Activity 2 information";
+      print("Activity 2 done");
+  });
+}
+
+void act3(){
+  String a = "Activity 3 information";
+  print("Activity 3 done");
+}
