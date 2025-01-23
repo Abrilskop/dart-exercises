@@ -1,0 +1,35 @@
+// Herencia: Cuando una clase puede heredar propiedades y metodo a una clase.
+// a la clase padre se llama super padre.
+
+void main() {
+  // creamos objeto de la clase Persona
+  Persona maria = Persona();
+  print("Maria");
+  print(maria.nmanos);
+  maria.caminar();
+  
+  // creamos objeto de la clase Nino
+  Nino juanito = Nino();
+  print("Juanito");
+  juanito.caminar();
+  juanito.grow();
+}
+
+class Persona {
+  int nmanos = 2;
+
+  // metodo
+  void caminar() {
+    print("Caminando gaaa");
+  }
+}
+
+// hereda
+class Nino extends Persona {
+  int anio = 9;
+    
+  void grow() {
+    anio = 9;
+    print("Creciendo");
+  }
+}
