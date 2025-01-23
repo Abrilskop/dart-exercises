@@ -3,22 +3,36 @@ void main(){
   // objeto: es parte de una clase, cada objeto tiene caracteristicas y metodos definidos, que determinan las acciones que haran dentro del codigo
   // para la creacion del objeto desde el main se creara un nuevo objeto llamado mycar
   
-  // objeto
-  Car myCar = Car();
+  // 1 objeto
+  Car myCar = Car(door:2);
   print(myCar.numberDoor);
   
   // 2 objeto
-  Car myBlueCar = Car();
+  Car myBlueCar = Car(door:4);
   print(myBlueCar.numberDoor);
   
   // asignamos un nuevo valor para el objeto myCar
   myCar.numberDoor = 4;
   print(myBlueCar.numberDoor);
   
-  // Contructores: 
+  myCar.start("My cars says welcome with Alexa");
+  // Contructores: ayudan a implementar caracteristicas determinadas para cada objeto.
+  
+  // en el caso de que se desee modificar el codigo del constructor, se puede realizar pero es una perdidad de tiempo y mucho codigo, es posible de que quede en un bucle.
 }
 
 class Car{
   // features - caracteristicas
   int numberDoor= 5;
+  
+  // constructor
+  // iniciando la variable door
+  Car({int door=0}){
+    numberDoor = door;
+  }
+    // en  este metodo se puede observar una nueva tarea que se le da a la clase
+  void start(String sayHello){
+    print(sayHello);
+  }
+
 }
