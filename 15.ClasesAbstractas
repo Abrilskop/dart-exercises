@@ -1,0 +1,42 @@
+// los objetos pueden ser creadas de una clase concreta, no de una clase abstracta.
+// Clase abstracta: no se pueden declarar instancias, ya que estas serviran de base para otras clases., Esas clases si pueden llevar metodos.
+
+abstract class animal{
+  void eat();
+  void sleep();
+}
+
+class dog extends animal{
+  @override
+  void eat(){
+    print("Dog is eating ...");
+  }
+  
+  @override
+  void sleep(){
+    print("Dog is sleeping ...");
+  }
+}
+
+class cat extends animal{
+  @override
+  void eat(){
+    print("Cat is eating ...");
+  }
+  
+  @override
+  void sleep(){
+    print("Cat is sleeping ...");
+  }
+}
+
+void main(){
+  dog D = dog();
+  cat C = cat();
+  
+  D.eat();
+  D.sleep();
+  
+  C.eat();
+  C.sleep();
+}
