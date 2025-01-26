@@ -60,3 +60,5 @@ Los archivos del repositorio están organizados por módulos, con nombres descri
 - **17.Futures.dart**  
   Ejercicio sobre cómo trabajar con **Futures** en Dart para manejar operaciones asincrónicas.
 
+- **get and set
+  Ejercicio pascalcass camelcase
