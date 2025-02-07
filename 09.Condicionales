@@ -11,8 +11,9 @@ void main(){
     print("Es menor a 40");
   }else if (resultado == 45){
     print("Entro en la condicion");
-  }
-  else{
+  } else if(resultado == 2){
+    print("es correcto yei)";
+}else{
     print("No se cumpli la condicion");
   }
 }
